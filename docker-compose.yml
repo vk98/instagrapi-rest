@@ -8,3 +8,9 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
+    networks:
+      - topinfluencers_network
+
+networks:
+  topinfluencers_network:
+    external: true
